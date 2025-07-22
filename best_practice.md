@@ -33,14 +33,14 @@ quick_notes/
 ✅ Features Implemented
 | Feature                      | Status                 |
 | ---------------------------- | ---------------------- |
-| Create a Note                | ✅                      |
-| View Notes                   | ✅                      |
-| Edit Notes                   | ✅                      |
-| Delete Notes                 | ✅                      |
-| Pin Notes                    | ✅                      |
-| Search Notes                 | ✅                      |
-| Change Font Style            | ✅                      |
-| Set Reminders                | ✅                      |
+| Create a Note                | ✅                     |
+| View Notes                   | ✅                     |
+| Edit Notes                   | ✅                     |
+| Delete Notes                 | ✅                     |
+| Pin Notes                    | ✅                     |
+| Search Notes                 | ✅                     |
+| Change Font Style            | ✅                     |
+| Set Reminders                | ✅                     |
 
 
 
