@@ -6,7 +6,7 @@
 
 ### 🧾 Overview
 
-**Quick Notes** is a lightweight note-taking application built using React. It supports creating, editing, deleting, pinning, and searching notes, all managed in the browser via `localStorage`. Upcoming enhancements include grammar correction using AI (OpenAI/Ollama).
+**Quick Notes** is a lightweight note-taking application built using React. It supports creating, editing, deleting, pinning, and searching notes, all managed in the browser via `localStorage`. Recent enhancements include **grammar correction and content rearrangement** using **AI (LLaMA 3 via Ollama)**.
 
 ---
 
@@ -46,6 +46,7 @@ Pin Note	✅ Implemented
 Search Note	✅ Implemented
 Font Style/Theme	✅ Implemented
 Set Reminders	✅ Implemented
+AI Rearrangement	✅ Implemented (LLaMA 3 + Ollama)
 
 ⚙️ Tech Stack
 Tech	Usage
@@ -55,7 +56,7 @@ CSS	Styling
 localStorage	Note persistence
 Git + GitHub	Version control
 Jest (CRA)	Testing setup
-OpenAI/Ollama (Planned)	AI for grammar
+Ollama + LLaMA	Local AI used for grammar correction & content polishing
 
 📦 Dependencies
 These are the core dependencies used in the Quick Notes project as listed in package.json.
@@ -65,6 +66,7 @@ react	^18.x	Core library for building UI components
 react-dom	^18.x	Enables React to interact with the DOM
 react-scripts	5.0.1	Scripts and configs for Create React App
 web-vitals	^2.x	Collects performance metrics (optional)
+axios (optional)	^1.x	For making requests to Ollama server
 
 📦 Dev Dependencies (from CRA)
 Package Name	Purpose
