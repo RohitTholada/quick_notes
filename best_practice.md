@@ -1,9 +1,6 @@
-<<<<<<< HEAD
+
 
 ## 📁 Project Architecture Overview — Quick Notes 📝
-
-> GitHub Repo: [RohitTholada/quick_notes](https://github.com/RohitTholada/quick_notes)
-
 ---
 
 ### 🧾 Overview
@@ -46,7 +43,7 @@ quick_notes/
 ### ✅ Key Features
 
 | Feature                 | Status       |
-|------------------------|--------------|
+|------------------------|----------------|
 | Create Note            | ✅ Implemented |
 | Edit Note              | ✅ Implemented |
 | Delete Note            | ✅ Implemented |
