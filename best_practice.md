@@ -39,6 +39,10 @@ quick_notes/
 ├── package.json # Project dependencies and scripts
 └── package-lock.json # Exact version tree of installed packages
 
+yaml
+Copy
+Edit
+
 ---
 
 ### ✅ Key Features
