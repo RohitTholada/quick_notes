@@ -1,6 +1,7 @@
-
-
 ## 📁 Project Architecture Overview — Quick Notes 📝
+
+> GitHub Repo: [RohitTholada/quick_notes](https://github.com/RohitTholada/quick_notes)
+
 ---
 
 ### 🧾 Overview
@@ -35,47 +36,40 @@ quick_notes/
 ├── .gitignore                   # Files and folders ignored by Git
 ├── README.md                    # Project documentation (to be updated)
 ├── package.json                 # Project dependencies and scripts
-├── package-lock.json            # Exact version tree of installed packages
-```
+└── package-lock.json            # Exact version tree of installed packages
+✅ Key Features
+Feature	Status
+Create Note	✅ Implemented
+Edit Note	✅ Implemented
+Delete Note	✅ Implemented
+Pin Note	✅ Implemented
+Search Note	✅ Implemented
+Font Style/Theme	✅ Implemented
+Set Reminders	✅ Implemented
 
----
+⚙️ Tech Stack
+Tech	Usage
+React	Frontend Framework
+JavaScript	App logic
+CSS	Styling
+localStorage	Note persistence
+Git + GitHub	Version control
+Jest (CRA)	Testing setup
+OpenAI/Ollama (Planned)	AI for grammar
 
-### ✅ Key Features
+📦 Dependencies
+These are the core dependencies used in the Quick Notes project as listed in package.json.
 
-| Feature                 | Status       |
-|------------------------|----------------|
-| Create Note            | ✅ Implemented |
-| Edit Note              | ✅ Implemented |
-| Delete Note            | ✅ Implemented |
-| Pin Note               | ✅ Implemented |
-| Search Note            | ✅ Implemented |
-| Font Style/Theme       | ✅ Implemented |
-| Set Reminders          | ✅ Implemented |
+Package Name	Version	Purpose
+react	^18.x	Core library for building UI components
+react-dom	^18.x	Enables React to interact with the DOM
+react-scripts	5.0.1	Scripts and configs for Create React App
+web-vitals	^2.x	Collects performance metrics (optional)
 
+📦 Dev Dependencies (from CRA)
+Package Name	Purpose
+@testing-library/jest-dom	Adds custom Jest matchers
+@testing-library/react	Utilities for testing React components
+@testing-library/user-event	Simulates user actions in tests
 
----
-
-### ⚙️ Tech Stack
-
-| Tech | Usage |
-|------|-------|
-| React | Frontend Framework |
-| JavaScript | App logic |
-| CSS | Styling |
-| localStorage | Note persistence |
-| Git + GitHub | Version control |
-| Jest (via CRA) | Testing setup |
-| (Planned) OpenAI/Ollama | Grammar AI API |
-
----
-
-### 🧪 Testing
-
-- `App.test.js`: Created by Create React App as a template test.
-- `setupTests.js`: Automatically configures testing tools.
-- Testing not yet expanded; future tests will cover:
-  - Note CRUD operations
-  - Reminder logic
-  - AI interaction (mocked)
-
----
+📄 To view exact versions, see the package.json or package-lock.json.
