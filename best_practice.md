@@ -15,6 +15,7 @@ Recent enhancements include grammar correction and content rearrangement using A
 ### 🏗️ Folder Structure and Descriptions
 
 <pre><code>```bash quick_notes/ ├── public/ # Contains static files and the base HTML │ ├── favicon.ico # Browser tab icon │ ├── index.html # Root HTML file where React is mounted │ ├── logo192.png # App icon (192px) │ ├── logo512.png # App icon (512px) │ ├── manifest.json # PWA configuration file │ └── robots.txt # Search engine crawling instructions ├── src/ # Core React app source │ ├── App.css # Global component styling │ ├── App.js # Root React component managing app logic │ ├── App.test.js # Sample unit test created by CRA │ ├── NewNote.js # Component for adding new notes │ ├── index.css # Application-wide styles │ ├── index.js # React DOM entry point │ ├── logo.svg # Default logo for display │ ├── reportWebVitals.js # Optional web performance analytics │ └── setupTests.js # Setup config for running tests ├── .gitignore # Files and folders ignored by Git ├── README.md # Project documentation (to be updated) ├── best_practice.md # Project architecture and practices ├── package.json # Project dependencies and scripts └── package-lock.json # Exact version tree of installed packages ``` </code></pre>
+
 ---
 
 ### ✅ Key Features
