@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { FaThumbtack, FaTrash, FaEdit, FaBell, FaPlus } from 'react-icons/fa';
+import { FaThumbtack, FaTrash, FaEdit, FaBell, FaPlus, FaMagic } from 'react-icons/fa';
 
 function App() {
   const [notes, setNotes] = useState(() => JSON.parse(localStorage.getItem('notes')) || []);
@@ -11,6 +11,7 @@ function App() {
   const [editIndex, setEditIndex] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [showForm, setShowForm] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     localStorage.setItem('notes', JSON.stringify(notes));
@@ -32,7 +33,7 @@ function App() {
     setReminder('');
     setFont('Arial');
     setEditIndex(null);
-    setShowForm(false); // hide form after saving
+    setShowForm(false);
   };
 
   const handleDelete = (index) => {
@@ -54,6 +55,27 @@ function App() {
     const updated = [...notes];
     updated[index].pinned = !updated[index].pinned;
     setNotes(updated);
+  };
+
+  const handleRearrange = async () => {
+    if (!content) return;
+    setLoading(true);
+    try {
+      const response = await fetch('http://localhost:11434/api/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'llama3',
+          prompt: `Rearrange and improve grammar and readability of this note:\n\n"${content}"`,
+          stream: false
+        })
+      });
+      const data = await response.json();
+      setContent(data.response);
+    } catch (err) {
+      console.error('Error with LLaMA 3 API:', err);
+    }
+    setLoading(false);
   };
 
   const filteredNotes = notes
@@ -99,7 +121,12 @@ function App() {
             <option value="Times New Roman">Times New Roman</option>
             <option value="Courier New">Courier New</option>
           </select>
+
           <button onClick={handleSave}>{editIndex !== null ? 'Update Note' : 'Save Note'}</button>
+
+          <button onClick={handleRearrange} disabled={loading}>
+            {loading ? 'Rearranging...' : <><FaMagic /> Rearrange</>}
+          </button>
         </div>
       )}
 
