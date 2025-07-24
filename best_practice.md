@@ -49,7 +49,7 @@ quick_notes/
 | Delete Note         | ✅ Implemented                    |
 | Pin Note            | ✅ Implemented                    |
 | Search Note         | ✅ Implemented                    |
-| Font Style/Theme    | ✅ Implemented                    |
+| Font Style          | ✅ Implemented                    |
 | Set Reminders       | ✅ Implemented                    |
 | AI Rearrangement    | ✅ Implemented (LLaMA 3 + Ollama) |
 
