@@ -6,7 +6,7 @@
 
 ### 🧾 Overview
 
-**Quick Notes** is a lightweight note-taking application built using React.  
+**Quick Notes** is a note-taking application built using React.  
 It supports creating, editing, deleting, pinning, and searching notes, all managed in the browser via `localStorage`.  
 Recent enhancements include grammar correction and content rearrangement using AI (LLaMA 3 via Ollama).
 
